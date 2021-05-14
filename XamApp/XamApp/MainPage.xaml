@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:carousel="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             x:Class="XamApp.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                    Height="*" />
+            <RowDefinition
+                    Height="*" />
+            <RowDefinition
+                    Height="*" />
+        </Grid.RowDefinitions>
+        <carousel:CarouselViewControl
+                x:Name="OnBoardingCarousel"
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Orientation="Horizontal"
+                Position="0"
+                ShowIndicators="True"
+                CurrentPageIndicatorTintColor="LightGray"
+                IndicatorsTintColor="White"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                PositionSelected="OnBoardingCarousel_PositionSelected" />
+
+
+
+        <Grid
+                Grid.Row="2"
+                Padding="12"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                AutomationId="skip">
+
+
+            <Button Style="{StaticResource buttonPrincipal}" Text="Comenzemos" Command="{Binding GoToLoginCommand}"/>
+        </Grid>
+    </Grid>
+ 
+</ContentPage>

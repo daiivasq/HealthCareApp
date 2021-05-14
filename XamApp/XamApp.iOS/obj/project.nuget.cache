@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "GZDBZCO3exhMYxd+9A/9B79BxhH2yB19cmuCG04bd3IBhj6pu/TaZ23U333OzAMmYS7txKqUthY947aaWSM4RQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Renombrar\\source\\repos\\XamApp\\XamApp\\XamApp.iOS\\XamApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Renombrar\\.nuget\\packages\\carouselview.formsplugin\\6.0.0\\carouselview.formsplugin.6.0.0.nupkg.sha512",
+    "C:\\Users\\Renombrar\\.nuget\\packages\\com.airbnb.ios.lottie\\2.5.13\\com.airbnb.ios.lottie.2.5.13.nupkg.sha512",
+    "C:\\Users\\Renombrar\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.0.9\\com.airbnb.xamarin.forms.lottie.4.0.9.nupkg.sha512",
+    "C:\\Users\\Renombrar\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Renombrar\\.nuget\\packages\\xamanimation\\1.3.0\\xamanimation.1.3.0.nupkg.sha512",
+    "C:\\Users\\Renombrar\\.nuget\\packages\\xamarin.communitytoolkit\\1.1.0\\xamarin.communitytoolkit.1.1.0.nupkg.sha512",
+    "C:\\Users\\Renombrar\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\Renombrar\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

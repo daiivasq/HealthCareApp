@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
+             x:Class="XamApp.Views.ContentViews.AddictionsView">
+
+
+    <ContentView.Resources>
+        <ResourceDictionary>
+
+            <xamanimation:ColorAnimation
+                x:Key="BackgroundColorAnimation"
+                Target="{x:Reference MainPanel}"
+                ToColor="{StaticResource BackgroundColor}"
+                Duration="500" />
+
+            <xamanimation:StoryBoard
+                x:Key="InfoPanelAnimation"
+                Target="{x:Reference InfoPanel}">
+                <xamanimation:FadeToAnimation
+                    Duration="50"
+                    Opacity="1" />
+                <xamanimation:TranslateToAnimation
+                    TranslateY="0"
+                    Easing="Linear"
+                    Duration="100" />
+            </xamanimation:StoryBoard>
+
+        </ResourceDictionary>
+    </ContentView.Resources>
+    
+    <ContentView.Content>
+        <Grid
+        x:Name="MainPanel"
+        BackgroundColor="{StaticResource AcrobaticsColor}">
+            <Grid.RowDefinitions>
+                <RowDefinition
+                Height="2.5*" />
+                <RowDefinition
+                Height="*" />
+            </Grid.RowDefinitions>
+            <forms:AnimationView x:Name="lottie"
+                                  Animation="adicciones.json" Speed="0.75"
+                                  AutoPlay="True" BackgroundColor="Transparent" RepeatMode="Infinite"  WidthRequest="350" HeightRequest="350"
+                                  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                                  />
+
+            <StackLayout
+            x:Name="InfoPanel"
+            Padding="0,-24,0,0"
+            Grid.Row="1"
+            VerticalOptions="Start"
+            Opacity="0"
+            TranslationY="250">
+                <Label  FontAttributes="Bold" FontSize="Title" Style="{StaticResource LabelTitle}"
+                Text="Depresión"
+                />
+                <Label 
+                Text="Te ayudamos a lidiar con tu depre." Style="{StaticResource LabelSubTitle}"/>
+
+            </StackLayout>
+
+
+        </Grid>
+
+    </ContentView.Content>
+</ContentView>
